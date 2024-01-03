@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The length Property</h2>
+<p>The length of the string is:</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+
+    // string length
+let text = "ABCDEFGHIJKLMNOPQRST";
+document.getElementById("demo").innerHTML = text.length;
+
+ // string charAt
+var text2 = "HELLO WORLD";
+document.getElementById("demo2").innerHTML = text2.charAt(0);
+
+// string at
+const name = "W3Schools";
+let letter = name.at(2);
+//document.getElementById("demo3").innerHTML = letter;
+document.getElementById("demo3").innerHTML = text2.at(3);
+
+// string slice
+let slice2 = "Apple, Banana, Kiwi";
+let part = slice24.slice(7,13);
+document.getElementById("demo4").innerHTML = part;
+
+//string trim
+let trim1 = "     Hello World!     ";
+let trim2 = text1.trim();
+document.getElementById("demo5").innerHTML =
+"Length text1 = " + text1.length + "<br>Length trim2 = " + trim2.length;
+
+//string upperCase and LowerCase
+/*function myFunction() {
+  let text = document.getElementById("demo5").innerHTML;
+  document.getElementById("demo5").innerHTML =
+  text.toUpperCase();
+}*/
+</script>
+</body>
+</html>

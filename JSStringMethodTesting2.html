@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       <h1>String Methods</h1>
+       <button onclick="myUpperCase()">Upper Case</button>
+       <button onclick="myLowerCase()">Lower Case</button>
+
+       <p id="demo">Hello World!</p>
+       <p id="demo2">Hello World!</p>
+
+      <script>
+
+        // string toUpperCase
+        function myUpperCase() {
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML =
+        text.toUpperCase();
+        }
+        function myLowerCase() {
+        let text = document.getElementById("demo2").innerHTML;
+        document.getElementById("demo2").innerHTML =
+        text.toLowerCase();
+        }
+      </script>
+    </body>
+</html>

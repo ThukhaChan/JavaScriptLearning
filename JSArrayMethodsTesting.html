@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays Method</h1>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+
+
+<script>
+    // Array Length
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let size = fruits.length;
+document.getElementById("demo").innerHTML ="Array Length" + size;
+
+// Array toString
+document.getElementById("demo2").innerHTML = fruits.toString();
+
+//Array join
+document.getElementById("demo3").innerHTML = fruits.join(" * ");
+
+//Array pop
+document.getElementById("demo4").innerHTML = fruits;
+fruits.pop();
+document.getElementById("demo5").innerHTML = fruits;
+
+//Aray push
+document.getElementById("demo6").innerHTML = fruits;
+fruits.push("Kiwi");
+document.getElementById("demo7").innerHTML = fruits;
+
+//Array shift
+document.getElementById("demo8").innerHTML = fruits;
+fruits.shift();
+document.getElementById("demo9").innerHTML = fruits;
+</script>
+
+</body>
+</html>
