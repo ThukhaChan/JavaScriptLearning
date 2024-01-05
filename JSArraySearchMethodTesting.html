@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The indexOf() Method</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+
+<script>
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.indexOf("Apple") + 1;
+let position1 = fruits.lastIndexOf("Apple") + 1;
+
+document.getElementById("demo").innerHTML = "Array IndexOf "+"Apple is found in position " + position;
+document.getElementById("demo1").innerHTML = "Array LastIndexOf "+"Apple is found in position " + position1;
+document.getElementById("demo2").innerHTML = fruits.includes("Mango");
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
+
+document.getElementById("demo3").innerHTML = "First number over 18 is " + first;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+fruits.sort();
+document.getElementById("demo4").innerHTML = fruits;
+fruits.reverse();
+document.getElementById("demo5").innerHTML = fruits;
+</script>
+
+</body>
+</html>
